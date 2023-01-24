@@ -15,14 +15,14 @@
 
 
 ## Dependencies
-*JUnit Testing Framework
-*Retrofit – For making the API call
-*Mocky  –  Viewmodel unit testing
-*Mock web server – testing the API response
-*Picasso
-*Coroutines
-*Dagger hilt
-*Navigation
+* JUnit Testing Framework
+* Retrofit – For making the API call
+* Mocky  –  Viewmodel unit testing
+* Mock web server – testing the API response
+* Picasso
+* Coroutines
+* Dagger hilt
+* Navigation
 
 
 ## Contributing

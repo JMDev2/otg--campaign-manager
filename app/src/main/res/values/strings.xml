@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">otg-campaigns</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="header">Welcome to</string>
+    <string name="header1">I&amp;M Personal Banking</string>
+    <string name="footer2">At I&amp;M Bank,we are on your side and we care about you and your personal data,As a result,
+        We have developed this <font color='#FF03DAC5'>Privacy Notice!</font></string>
+
+    <string name="instructions">Enter Your Login Details</string>
+
+
+</resources>

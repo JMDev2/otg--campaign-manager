@@ -1,0 +1,455 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:textAlignment="center"
+    tools:context=".fragments.LocalBankTransferFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
+        app:layout_constraintBottom_toTopOf="@+id/textView12"
+        app:layout_constraintTop_toTopOf="@+id/textView12">
+
+
+        <LinearLayout
+            android:id="@+id/local_bank_transfer"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:background="@drawable/fragment_header"
+            android:gravity="bottom"
+            android:paddingBottom="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:id="@+id/imageView_cancel"
+                android:layout_width="189dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@drawable/ic_close_24" />
+
+            <TextView
+                android:id="@+id/textView_BankTransfer"
+                android:layout_width="450dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_weight="1"
+                android:text="Local Bank Transfer"
+                android:textColor="#ffffff"
+                android:textSize="20sp"
+                tools:ignore="HardcodedText" />
+
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textView_clear_all"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="44dp"
+            android:layout_weight="1"
+            android:text="Clear All"
+            android:textAlignment="center"
+            android:textColor="@color/teal_200"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/local_bank_transfer"
+            tools:ignore="HardcodedText" />
+
+        <TextView
+            android:id="@+id/textView_from"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="23dp"
+            android:layout_marginTop="30dp"
+            android:layout_weight="1"
+            android:text="From"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/local_bank_transfer"
+            tools:ignore="HardcodedText" />
+
+
+        <TextView
+            android:id="@+id/textView_Selectaccount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="36dp"
+            android:layout_weight="1"
+            android:text="Select an account"
+            android:textAlignment="center"
+            android:textSize="24sp"
+            app:layout_constraintBottom_toTopOf="@+id/editTextNumber2"
+            app:layout_constraintStart_toEndOf="@+id/imageView8"
+            app:layout_constraintTop_toBottomOf="@+id/textView_from"
+            tools:ignore="HardcodedText">
+
+        </TextView>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/dropdown_menu"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginStart="111dp"
+            android:layout_marginEnd="37dp"
+            app:layout_constraintBottom_toBottomOf="@+id/textView_Selectaccount"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/textView_Selectaccount"
+            app:layout_constraintTop_toTopOf="@+id/textView_Selectaccount"
+            tools:ignore="MissingConstraints">
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <EditText
+            android:id="@+id/editTextNumber2"
+            android:layout_width="315dp"
+            android:layout_height="40dp"
+            android:layout_marginBottom="13dp"
+            android:ems="10"
+            android:inputType="number"
+            app:layout_constraintBottom_toTopOf="@+id/view1"
+            app:layout_constraintEnd_toEndOf="@+id/textView_Selectaccount"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/textView_Selectaccount"
+            app:layout_constraintTop_toBottomOf="@+id/textView_Selectaccount"
+            tools:ignore="Autofill,MissingConstraints" />
+
+
+        <View
+            android:id="@+id/view1"
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_marginTop="14dp"
+            android:background="@color/fade_black"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editTextNumber2" />
+
+        <TextView
+            android:id="@+id/textView_To"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="23dp"
+            android:layout_weight="1"
+            android:text="TO"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/validText"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/validText"
+            app:layout_constraintVertical_bias="1.0"
+            tools:ignore="HardcodedText" />
+
+
+        <TextView
+            android:id="@+id/validText"
+            android:layout_width="202dp"
+            android:layout_height="33dp"
+            android:layout_marginTop="22dp"
+            android:layout_marginEnd="18dp"
+            android:layout_marginBottom="28dp"
+            android:background="@drawable/validate_button"
+            android:drawableRight="@drawable/ic_baseline_search_24"
+            android:gravity="center"
+            android:paddingRight="10dp"
+            android:text="Search beneficiaries"
+            android:textColor="#257e77"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/editTextNumber"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/view1"
+            app:layout_constraintVertical_bias="1.0"
+            tools:ignore="HardcodedText" />
+
+        <ImageView
+            android:id="@+id/imageView66"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="17dp"
+            android:layout_marginEnd="8dp"
+            android:src="@drawable/ic_baseline_phone_android_24"
+            app:layout_constraintBottom_toBottomOf="@+id/editTextNumber"
+            app:layout_constraintEnd_toStartOf="@+id/editTextNumber"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/editTextNumber"
+            app:layout_constraintVertical_bias="0.428" />
+
+
+        <EditText
+            android:id="@+id/editTextNumber"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="28dp"
+            android:layout_marginBottom="25dp"
+            android:ems="10"
+            android:hint="+254722 XXX XXX"
+            android:inputType="number"
+            app:layout_constraintBottom_toTopOf="@+id/viewphone"
+            app:layout_constraintStart_toEndOf="@+id/imageView66"
+            app:layout_constraintTop_toBottomOf="@+id/textView_To"
+            tools:ignore="Autofill,HardcodedText" />
+
+
+        <ImageView
+            android:id="@+id/imageView_book"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginEnd="20dp"
+            android:layout_weight="50"
+            android:src="@drawable/ic_baseline_menu_book_24"
+            app:layout_constraintBottom_toBottomOf="@+id/editTextNumber"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/editTextNumber"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <View
+            android:id="@+id/viewphone"
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:background="@color/fade_black"
+            app:layout_constraintBottom_toTopOf="@+id/textView12"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editTextNumber" />
+
+        <TextView
+            android:id="@+id/textView12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="23dp"
+            android:layout_marginTop="23dp"
+            android:layout_marginEnd="316dp"
+            android:text="Amount"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/viewphone"
+            tools:ignore="HardcodedText" />
+
+        <TextView
+            android:id="@+id/textView14"
+            android:layout_width="27dp"
+            android:layout_height="25dp"
+            android:layout_marginStart="17dp"
+            android:layout_marginEnd="8dp"
+            android:text="KES"
+            app:layout_constraintBottom_toBottomOf="@+id/editTextpurpose"
+            app:layout_constraintEnd_toStartOf="@+id/editTextpurpose"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/editTextpurpose"
+            tools:ignore="HardcodedText,MissingConstraints" />
+
+
+        <EditText
+            android:id="@+id/editTextpurpose"
+            android:layout_width="315dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="43dp"
+            android:ems="10"
+            android:hint="0.00"
+            android:inputType="number"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/textView14"
+            app:layout_constraintTop_toBottomOf="@+id/textView12"
+            tools:ignore="Autofill,HardcodedText" />
+
+        <TextView
+            android:id="@+id/textView15"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="28dp"
+            android:layout_marginBottom="20dp"
+            android:drawableStart="@drawable/ic_add_description"
+            android:text="Add a payment description (optional)"
+            android:textColor="#3acdc1"
+            android:textSize="17dp"
+            app:layout_constraintBottom_toTopOf="@+id/viewphone1"
+            app:layout_constraintEnd_toEndOf="@+id/editTextpurpose"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/textView14"
+            app:layout_constraintTop_toBottomOf="@+id/editTextpurpose"
+            tools:ignore="HardcodedText" />
+
+        <View
+            android:id="@+id/viewphone1"
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:background="@color/fade_black"
+            app:layout_constraintBottom_toTopOf="@+id/textView_paymentinfor"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView15" />
+
+
+
+
+
+        <TextView
+            android:id="@+id/textView_paymentinfor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="23dp"
+            android:layout_marginTop="29dp"
+            android:layout_weight="1"
+            android:text="Payment Info"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/viewphone1"
+            tools:ignore="HardcodedText" />
+
+
+        <EditText
+            android:id="@+id/editTextTextPersonName2"
+            android:layout_width="315dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="24dp"
+            android:layout_weight="1"
+            android:ems="10"
+            android:hint="Purpose"
+            android:inputType="textPersonName"
+            app:layout_constraintStart_toEndOf="@+id/imageView77"
+            app:layout_constraintTop_toBottomOf="@+id/textView_paymentinfor"
+            tools:ignore="Autofill,HardcodedText,MissingConstraints" />
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/dropdown_purpose"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+            android:layout_width="32dp"
+            android:layout_height="26dp"
+            android:layout_marginTop="80dp"
+            android:layout_marginEnd="30dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/viewphone1"
+            tools:ignore="MissingConstraints">
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <ImageView
+            android:id="@+id/imageView77"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="17dp"
+            android:src="@drawable/ic_baseline_description_24"
+            app:layout_constraintBottom_toBottomOf="@+id/editTextTextPersonName2"
+            app:layout_constraintEnd_toStartOf="@+id/editTextTextPersonName2"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/editTextTextPersonName2" />
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardView44"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginStart="23dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="23dp"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/schedule_card"
+            app:cardCornerRadius="15dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName2">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/schedule_card">
+
+                <TextView
+                    android:id="@+id/textView99"
+                    android:layout_width="213dp"
+                    android:layout_height="27dp"
+                    android:layout_margin="10dp"
+                    android:layout_marginStart="16dp"
+                    android:drawableLeft="@drawable/ic_baseline_watch_later_24"
+                    android:gravity="center"
+                    android:text="Schedule Payment"
+                    android:textSize="20sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.131"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.484"
+                    tools:ignore="HardcodedText" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="407dp"
+            android:layout_height="87dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/bottom_next_textlayout"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cardView44">
+
+
+            <TextView
+                android:id="@+id/scheduleText"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginStart="23dp"
+                android:layout_marginEnd="23dp"
+                android:background="@drawable/search_button"
+                android:gravity="center"
+                android:paddingEnd="25dp"
+                android:text="Next"
+                android:textColor="#257e77"
+                android:textSize="24sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:textColor="#ffffff"
+                tools:ignore="HardcodedText">
+
+            </TextView>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <ImageView
+            android:id="@+id/imageView8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="17dp"
+            android:layout_marginTop="40dp"
+            android:src="@drawable/ic_wallet_24"
+            app:layout_constraintEnd_toStartOf="@+id/textView_Selectaccount"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView_from" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</ScrollView>
+
+
+

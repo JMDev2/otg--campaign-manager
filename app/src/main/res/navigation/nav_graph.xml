@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/login_Fragment">
+    <fragment
+        android:id="@+id/login_Fragment"
+        android:name="com.example.otg_campaigns.fragments.Login_Fragment"
+        android:label="fragment_login_"
+        tools:layout="@layout/fragment_login_" />
+
+
+    <fragment
+        android:id="@+id/kraPaymentFragment"
+        android:name="com.example.otg_campaigns.fragments.KraPaymentFragment"
+        android:label="fragment_kra_payment"
+        tools:layout="@layout/fragment_kra_payment" >
+
+        <deepLink app:uri="https://campaign.imbank.com/kra"/>
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/bankTransferFragment"
+        android:name="com.example.otg_campaigns.fragments.LocalBankTransferFragment"
+        android:label="fragment_local_bank_fragment"
+        tools:layout="@layout/fragment_local_bank_transfer" >
+
+        <deepLink app:uri="https://campaign.imbank.com/bank"/>
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/transferToAccount"
+        android:name="com.example.otg_campaigns.fragments.TransferToAccountFragment"
+        android:label="fragment_transfer_to_account"
+        tools:layout="@layout/fragment_transfer_to_account" >
+
+        <deepLink app:uri="https://campaign.imbank.com/account"/>
+
+    </fragment>
+</navigation>

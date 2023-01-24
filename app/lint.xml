@@ -1,0 +1,22 @@
+
+
+<lint>
+<issue id= "LabelFor" severity="ignore"/>
+    <issue id= "GradleCompatible" severity="ignore"/>
+    <issue id= "ContentDescription" severity="ignore"/>
+    <issue id= "UseCompatTextViewDrawableXml" severity="ignore"/>
+    <issue id= "GradleDependency" severity="ignore"/>
+    <issue id= "SpUsage" severity="ignore"/>
+    <issue id= "VectorRaster" severity="ignore"/>
+    <issue id= "RtlSymmetry" severity="ignore"/>
+    <issue id= "RtlHardcoded" severity="ignore"/>
+    <issue id= "HardcodedTex" severity="ignore"/>
+    <issue id= "VectorPath" severity="ignore"/>
+    <issue id= "UnusedResources" severity="ignore"/>
+    <issue id= "TextFields" severity="ignore"/>
+    <issue id= "IconLocation" severity="ignore"/>
+    <issue id= "IconLauncherShape" severity="ignore"/>
+    <issue id= "TypographyDashes" severity="ignore"/>
+    <issue id= "TypographyDashes" severity="ignore"/>
+
+</lint>

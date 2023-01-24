@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/deeplink_nav"
+    app:startDestination="@id/kraPaymentFragment">
+
+    <fragment
+        android:id="@+id/kraPaymentFragment"
+        android:name="com.example.otg_campaigns.fragments.KraPaymentFragment"
+        android:label="fragment_kra_payment"
+        tools:layout="@layout/fragment_kra_payment" >
+
+
+        <argument
+            android:name="action"
+            app:argType="string"
+            app:nullable="true"
+            android:defaultValue="@null" />
+
+
+        <deepLink app:uri="https://campaign.imbank.com/?action={action}"/>
+
+    </fragment>
+
+
+
+
+
+</navigation>
